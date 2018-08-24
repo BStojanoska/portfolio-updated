@@ -182,6 +182,7 @@
   font-size: 1.1em;
   text-align: start;
   cursor: pointer;
+  font-family: 'Port Lligat Slab', serif;
 }
 
 .wrapper main .project-wrapper .js-badger-accordion-header:focus {
