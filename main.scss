@@ -124,13 +124,12 @@ $concrete: #32363b;
                 transition: max-height ease-in-out 0.2s;
             }
             .js-badger-accordion-header {
-                // background: linear-gradient(to right, $concrete 0%, rgba($concrete, .0) 80%);
                 background: $concrete;
                 border: none;
                 border-radius: 2px;
                 color: white;
                 width: 100%;
-                padding: 1em 2em;
+                padding: .5em 1em;
                 margin-bottom: 1em;
                 font-size: 1.3em;     
                 text-align: start;
