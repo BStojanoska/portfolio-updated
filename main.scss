@@ -120,9 +120,12 @@ $conrete: #32363b;
                 font-family: 'Port Lligat Slab', serif;
                 line-height: 1.2em;
                 text-indent: 2em;
+                a {
+                    color: black;
+                    font-weight: bold;
+                }
             }
             .image-container {
-                // padding: 4em;
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-auto-rows: auto;
