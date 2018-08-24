@@ -179,6 +179,8 @@
   border: 1px solid black;
   background-size: cover !important;
   background-position: center !important;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .wrapper main .image-container a div:hover {

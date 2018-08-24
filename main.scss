@@ -138,6 +138,7 @@ $conrete: #32363b;
                     border: 1px solid black;
                     background-size: cover !important;
                     background-position: center !important;
+                    transition: all .2s ease-in;
                     &:hover {
                         border: 1px solid $bronze;
                         transform: scale(1.01);
