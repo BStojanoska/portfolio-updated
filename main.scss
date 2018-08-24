@@ -135,10 +135,10 @@ $conrete: #32363b;
                 div {
                     height: 21em;
                     width: 21em;
-                    border: 1px solid black;
+                    border: 1px solid white;
                     background-size: cover !important;
                     background-position: center !important;
-                    transition: all .2s ease-in;
+                    transition: all .3s ease-in;
                     &:hover {
                         border: 1px solid $bronze;
                         transform: scale(1.01);
@@ -149,8 +149,8 @@ $conrete: #32363b;
 
                 @mixin background-layer($url) {
                     background: linear-gradient( 
-                        $bronze,
-                        $bronze),
+                        rgba(255, 255, 255, .4),
+                        rgba(255, 255, 255, .4)),
                         url($url);
                 }
 
