@@ -171,12 +171,11 @@
 }
 
 .wrapper main .project-wrapper .js-badger-accordion-header {
-  background: #32363b;
+  background: none;
   border: none;
   border-radius: 2px;
-  color: white;
+  color: black;
   width: 100%;
-  padding: .5em 1em;
   margin-bottom: 1em;
   font-size: 1.3em;
   text-align: start;
@@ -190,7 +189,7 @@
 
 .wrapper main .project-wrapper .js-badger-accordion-header small {
   font-size: .8em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(36, 28, 28, 0.5);
 }
 
 .wrapper main .project-wrapper p {
@@ -435,9 +434,6 @@
         -ms-grid-row-align: center;
         align-self: center;
     width: 90%;
-  }
-  .wrapper main .project-wrapper .js-badger-accordion-header {
-    background: #32363b;
   }
 }
 /*# sourceMappingURL=main.css.map */

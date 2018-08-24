@@ -124,12 +124,11 @@ $concrete: #32363b;
                 transition: max-height ease-in-out 0.2s;
             }
             .js-badger-accordion-header {
-                background: $concrete;
+                background: none;
                 border: none;
                 border-radius: 2px;
-                color: white;
+                color: black;
                 width: 100%;
-                padding: .5em 1em;
                 margin-bottom: 1em;
                 font-size: 1.3em;     
                 text-align: start;
@@ -140,7 +139,7 @@ $concrete: #32363b;
                 }           
                 small {
                     font-size: .8em;
-                    color: rgba(255, 255, 255, .5);
+                    color: rgba(36, 28, 28, 0.5);
                 }
             }
 
@@ -344,11 +343,6 @@ $concrete: #32363b;
                 .bio {
                     align-self: center;
                     width: 90%;
-                }
-                .project-wrapper {
-                    .js-badger-accordion-header {
-                        background: $concrete;
-                    }
                 }
             }
         }
