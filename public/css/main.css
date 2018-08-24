@@ -171,15 +171,14 @@
 }
 
 .wrapper main .project-wrapper .js-badger-accordion-header {
-  background: -webkit-gradient(linear, left top, right top, from(#32363b), color-stop(80%, rgba(50, 54, 59, 0)));
-  background: linear-gradient(to right, #32363b 0%, rgba(50, 54, 59, 0) 80%);
+  background: #32363b;
   border: none;
   border-radius: 2px;
   color: white;
   width: 100%;
   padding: 1em 2em;
   margin-bottom: 1em;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-align: start;
   cursor: pointer;
   font-family: 'Port Lligat Slab', serif;
