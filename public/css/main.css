@@ -37,7 +37,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 20%;
+  top: 15%;
 }
 
 .wrapper header .contact img {
@@ -115,7 +115,8 @@
           transform: rotate(-10deg);
 }
 
-.wrapper header .name .first_name, .wrapper header .name .last_name {
+.wrapper header .name .first_name,
+.wrapper header .name .last_name {
   background: -webkit-gradient(linear, left top, right top, from(#d38435), to(rgba(238, 156, 74, 0.7)));
   background: linear-gradient(to right, #d38435, rgba(238, 156, 74, 0.7));
   margin-bottom: .2em;
@@ -151,8 +152,20 @@
   padding-top: 1em;
 }
 
-.wrapper main .image-container {
-  padding: 4em;
+.wrapper main .project-wrapper {
+  padding: 2em;
+}
+
+.wrapper main .project-wrapper p {
+  padding-bottom: 1em;
+  width: 80%;
+  font-size: 1.2em;
+  font-family: 'Port Lligat Slab', serif;
+  line-height: 1.2em;
+  text-indent: 2em;
+}
+
+.wrapper main .project-wrapper .image-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
@@ -161,7 +174,7 @@
   grid-gap: 1em;
 }
 
-.wrapper main .image-container a {
+.wrapper main .project-wrapper .image-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +186,7 @@
           align-items: center;
 }
 
-.wrapper main .image-container a div {
+.wrapper main .project-wrapper .image-container a div {
   height: 21em;
   width: 21em;
   border: 1px solid white;
@@ -183,7 +196,7 @@
   transition: all .3s ease-in;
 }
 
-.wrapper main .image-container a div:hover {
+.wrapper main .project-wrapper .image-container a div:hover {
   border: 1px solid rgba(238, 156, 74, 0.4);
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
@@ -191,85 +204,94 @@
   background-position: center;
 }
 
-.wrapper main .image-container a .image-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/challenge3.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/challenge3.png");
+.wrapper main .project-wrapper .image-container a .image-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/challenge3.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/challenge3.jpg");
 }
 
-.wrapper main .image-container a .image-1:hover {
-  background: url("../photos/portfolio/challenge3.png");
+.wrapper main .project-wrapper .image-container a .image-1:hover {
+  background: url("../photos/portfolio/challenge3.jpg");
 }
 
-.wrapper main .image-container a .image-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom test website.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom test website.png");
+.wrapper main .project-wrapper .image-container a .image-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_test_website.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_test_website.jpg");
 }
 
-.wrapper main .image-container a .image-2:hover {
-  background: url("../photos/portfolio/Glozzom test website.png");
+.wrapper main .project-wrapper .image-container a .image-2:hover {
+  background: url("../photos/portfolio/Glozzom_test_website.jpg");
 }
 
-.wrapper main .image-container a .image-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_about.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_about.png");
+.wrapper main .project-wrapper .image-container a .image-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_about.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_about.jpg");
 }
 
-.wrapper main .image-container a .image-3:hover {
-  background: url("../photos/portfolio/Glozzom_about.png");
+.wrapper main .project-wrapper .image-container a .image-3:hover {
+  background: url("../photos/portfolio/Glozzom_about.jpg");
 }
 
-.wrapper main .image-container a .image-4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_contact.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_contact.png");
+.wrapper main .project-wrapper .image-container a .image-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_contact.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_contact.jpg");
 }
 
-.wrapper main .image-container a .image-4:hover {
-  background: url("../photos/portfolio/Glozzom_contact.png");
+.wrapper main .project-wrapper .image-container a .image-4:hover {
+  background: url("../photos/portfolio/Glozzom_contact.jpg");
 }
 
-.wrapper main .image-container a .image-5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_services.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_services.png");
+.wrapper main .project-wrapper .image-container a .image-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_services.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_services.jpg");
 }
 
-.wrapper main .image-container a .image-5:hover {
-  background: url("../photos/portfolio/Glozzom_services.png");
+.wrapper main .project-wrapper .image-container a .image-5:hover {
+  background: url("../photos/portfolio/Glozzom_services.jpg");
 }
 
-.wrapper main .image-container a .image-6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs.png");
+.wrapper main .project-wrapper .image-container a .image-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs.jpg");
 }
 
-.wrapper main .image-container a .image-6:hover {
-  background: url("../photos/portfolio/BrainsterXyzLabs.png");
+.wrapper main .project-wrapper .image-container a .image-6:hover {
+  background: url("../photos/portfolio/BrainsterXyzLabs.jpg");
 }
 
-.wrapper main .image-container a .image-7 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard.png");
+.wrapper main .project-wrapper .image-container a .image-7 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard.jpg");
 }
 
-.wrapper main .image-container a .image-7:hover {
-  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard.png");
+.wrapper main .project-wrapper .image-container a .image-7:hover {
+  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard.jpg");
 }
 
-.wrapper main .image-container a .image-8 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard2.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard2.png");
+.wrapper main .project-wrapper .image-container a .image-8 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard2.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard2.jpg");
 }
 
-.wrapper main .image-container a .image-8:hover {
-  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard2.png");
+.wrapper main .project-wrapper .image-container a .image-8:hover {
+  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard2.jpg");
 }
 
-.wrapper main .image-container a .image-9 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard3.png");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard3.png");
+.wrapper main .project-wrapper .image-container a .image-9 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/BrainsterXyzLabs_dashboard3.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/BrainsterXyzLabs_dashboard3.jpg");
 }
 
-.wrapper main .image-container a .image-9:hover {
-  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard3.png");
+.wrapper main .project-wrapper .image-container a .image-9:hover {
+  background: url("../photos/portfolio/BrainsterXyzLabs_dashboard3.jpg");
+}
+
+.wrapper main .project-wrapper .image-container a .image-10 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/Glozzom_blog.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/Glozzom_blog.jpg");
+}
+
+.wrapper main .project-wrapper .image-container a .image-10:hover {
+  background: url("../photos/portfolio/Glozzom_blog.jpg");
 }
 
 @media only screen and (max-width: 1440px) {
@@ -333,9 +355,12 @@
         align-self: center;
     width: 90%;
   }
+  .wrapper main .project-wrapper p {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) and (max-width: 425px) {
   .wrapper {
         grid-template-areas: "h h" "m m";
     -ms-grid-rows: (minmax(600px, 1fr))[auto-fill];
