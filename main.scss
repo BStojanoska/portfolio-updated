@@ -3,7 +3,7 @@ $bronze: rgba(238,
 156,
 74,
 0.4);
-$conrete: #32363b;
+$concrete: #32363b;
 .bold {
     font-weight: bold;
 }
@@ -27,7 +27,7 @@ $conrete: #32363b;
             right: 0;
             margin-left: auto;
             margin-right: auto;
-            top: 15%;
+            top: 15vw;
             img {
                 height: 15em;
                 width: 15em;
@@ -63,14 +63,14 @@ $conrete: #32363b;
                         }
                     }
                     .fa-linkedin-in {
-                        color: $conrete;
+                        color: $concrete;
                         &:hover {
                             color: #4875B4;
                             border-radius: 100%;
                         }
                     }
                     .fa-twitter {
-                        color: $conrete;
+                        color: $concrete;
                         &:hover {
                             color: #33CCFF;
                             border-radius: 100%;
@@ -113,6 +113,36 @@ $conrete: #32363b;
         }
         .project-wrapper {
             padding: 2em;
+            .badger-accordion__panel {
+                max-height: 75vh;
+                overflow: hidden;
+            }
+            .badger-accordion__panel.-ba-is-hidden {
+                max-height: 0 !important;
+            }
+            .badger-accordion--initalised .badger-accordion__panel {
+                transition: max-height ease-in-out 0.2s;
+            }
+            .js-badger-accordion-header {
+                background: linear-gradient(to right, $concrete 0%, rgba($concrete, .0) 80%);
+                border: none;
+                border-radius: 2px;
+                color: white;
+                width: 100%;
+                padding: 1em 2em;
+                margin-bottom: 1em;
+                font-size: 1.1em;     
+                text-align: start;
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }           
+                small {
+                    font-size: .8em;
+                    color: rgba(255, 255, 255, .5);
+                }
+            }
+
             p {
                 padding-bottom: 1em;
                 width: 80%;
@@ -220,6 +250,11 @@ $conrete: #32363b;
 @media only screen and (max-width: 1440px) {
     .wrapper {
         grid-template-columns: 100px 2fr 5fr 100px;
+        header {
+            .contact {
+                top: 20vw;
+            }
+        }
     }
 }
 
@@ -227,7 +262,7 @@ $conrete: #32363b;
     .wrapper {
         header {
             .contact {
-                top: 13%;
+                top: 18vw;
             }
             .name {
                 left: 10%;
@@ -242,7 +277,7 @@ $conrete: #32363b;
         grid-template-columns: 50px 3fr 5fr 50px;
         header {
             .contact {
-                top: 10%;
+                top: 25vw;
             }
             .name {
                 left: 10%;
@@ -308,6 +343,11 @@ $conrete: #32363b;
                 .bio {
                     align-self: center;
                     width: 90%;
+                }
+                .project-wrapper {
+                    .js-badger-accordion-header {
+                        background: $concrete;
+                    }
                 }
             }
         }
