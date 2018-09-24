@@ -241,7 +241,36 @@ $concrete: #32363b;
                             background: url('../photos/portfolio/Glozzom_blog.jpg');
                         }
                     }
+                    .image-11 {
+                        @include background-layer('../photos/portfolio/forum1.png');
+                        &:hover {
+                            background: url('../photos/portfolio/forum1.png');
+                        }
+                    }
+                    .image-12 {
+                        @include background-layer('../photos/portfolio/forum2.png');
+                        &:hover {
+                            background: url('../photos/portfolio/forum2.png');
+                        }
+                    }
+                    .image-13 {
+                        @include background-layer('../photos/portfolio/forum3.png');
+                        &:hover {
+                            background: url('../photos/portfolio/forum3.png');
+                        }
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .wrapper {
+        grid-template-columns: 100px 2fr 6fr 100px;
+        header {
+            .contact {
+                top: 20vw;
             }
         }
     }
