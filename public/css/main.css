@@ -335,6 +335,43 @@
   background: url("../photos/portfolio/Glozzom_blog.jpg");
 }
 
+.wrapper main .project-wrapper .image-container a .image-11 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/forum1.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/forum1.png");
+}
+
+.wrapper main .project-wrapper .image-container a .image-11:hover {
+  background: url("../photos/portfolio/forum1.png");
+}
+
+.wrapper main .project-wrapper .image-container a .image-12 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/forum2.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/forum2.png");
+}
+
+.wrapper main .project-wrapper .image-container a .image-12:hover {
+  background: url("../photos/portfolio/forum2.png");
+}
+
+.wrapper main .project-wrapper .image-container a .image-13 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../photos/portfolio/forum3.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../photos/portfolio/forum3.png");
+}
+
+.wrapper main .project-wrapper .image-container a .image-13:hover {
+  background: url("../photos/portfolio/forum3.png");
+}
+
+@media only screen and (max-width: 1600px) {
+  .wrapper {
+    -ms-grid-columns: 100px 2fr 6fr 100px;
+        grid-template-columns: 100px 2fr 6fr 100px;
+  }
+  .wrapper header .contact {
+    top: 20vw;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .wrapper {
     -ms-grid-columns: 100px 2fr 5fr 100px;
